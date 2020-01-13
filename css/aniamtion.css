@@ -1,0 +1,16 @@
+body,h1,h2,h3,h4,h5,h6,p {
+  background: #deddcd none repeat scroll 0 0;
+  margin: 0px;
+  padding: 0px;
+}
+.wrap {
+  margin: 40px auto;
+  width: 960px;
+}
+.head > h1 {
+  color: #eeeeee;
+  font-size: 64px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 3px 4px #555;
+}

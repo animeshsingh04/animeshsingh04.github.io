@@ -13,77 +13,191 @@
 
 </head>
 <body>
- <script type="text/javascript" src="js/custom.js"></script>
-	<div class="wrap">
-		<header>
-			<div class="head">
-				<h1>
-					3d animation using pure CSS3
-					<small>movie poster example</small>
-				</h1>
+	<header id="header">
+	  <div class="row m-0">
+		<div class="col-3 bgcolor-black">
+		  <nav class="primary-nav navbar-expand-md">
+			<div class="site-title text-center text-light py-5">
+			  <a href="#" class="navbar-brand font-staat font-size-40">AS</a>
+			  <p class="description text-uppercase font-os">Animesh Singh</p>
 			</div>
-			<h2>
-				<a href="https://www.linkedin.com/in/04animeshsingh/">Animesh Singh</a>
-			</h2>
-		</header>
-		<div class="content">
-			<p>
-				Here's an example of pretty powerful CSS3 animation and 3d effects. Using the perspective, transform and transition properties, we can create a 3d animation effect. Simply hover over the movie posters below to see the effect in it's full glory.
-			</p>
-			<p>
-				Just make sure you're running the latest version of a -webkit based browser (Apple Safari or Google Chrome) to see the effect. If you don't have any of those browers, visit the article to see a video of the effect.
-			</p>
+			<div class="d-flex flex-column">
+			  <a href="#home" class="nav-item nav-link text-white-50 font-os font-size-16 active">Home</a>
+			  <a href="#about" class="nav-item nav-link text-white-50 font-os font-size-16">About me</a>
+			  <a href="#projects" class="nav-item nav-link text-white-50 font-os font-size-16">Projects</a>
+			  <a href="#updates" class="nav-item nav-link text-white-50 font-os font-size-16">News & Updates</a>
+			  <a href="#extra" class="nav-item nav-link text-white-50 font-os font-size-16">Extras</a>
+			</div>
+		  </nav>
 		</div>
-		<div class="animation_image">
+	  </div>
+	  <button class="toggle-button"><span class="fas fa-bars fa-2x"></span></button>
+	</header>
+	<main id="site-main">
+	  <div class="row m-0">
+		<div class="col-md-9 offset-md-3 px-0">
+		  <section class="site-banner" id="home">
+			<div class="banner-area">
+			  <div class="author text-center">
+				<div class="author-img"></div>
+				<h1 class="text-white font-staat font-size-40 text-uppercase py-3">Animesh Singh</h1>
+				<h5 class="text-white font-ram font-size-27"><span id="typed"></span></h5>
+			  </div>
+			</div>
+		  </section>
+		  <section id="about" class="about px-4 my-2">
+			<div class="me py-4">
+			  <h5 class="text-uppercase font-os font-size-16 text-muted">Information</h5>
+			  <h1 class="text-uppercase font-staat font-size-34">About Me</h1>
+			</div>
+			<div class="row m-0">
+			  <div class="col-sm-5 pl-0">
+				<img src="images/about.JPG" alt="about-image" class="img-fluid">
+			  </div>
+			  <div class="col-sm-7" id="about-text">
+				<h6 class="text-uppercase font-os font-size-34">Karan Bhanot</h6>
+			  <p class="font-ram font-size-20 py-2">Pursuing PhD in Computer Science<br>
+			  Research in Data Science and Deep Learning</p>
+			  <p class="text-justify">I am pursuing <strong>Doctor of Philosophy in Computer Science</strong> at Rensselaer Polytechnic Institute, Troy, New York.<br><br>
+			  I have worked on many <strong>Machine Learning, Deep Learning, Data Science and Data Analytics</strong> projects including Mortality Minder, COVID Minder, Color identification, Malaria Cell Identifier, Activity Recognition, Heart Disease Prediction, Web Scraping and many more using <code>Python</code> and <code>R</code> including their numerous libraries such as <code>Tensorflow</code>, <code>Pytorch</code>, <code>Sklearn</code>, <code>Dplyr</code> and <code>Leaflet</code>.<br><br>
+			  I have developed a template for a <b>Machine Learning application</b> using <code>Flask</code> and <code>React</code>.
+			  I'm also great with frontend web application development using <code>HTML</code>, <code>CSS</code> and <code>JavaScript</code>.</p>
+			  <a href="https://github.com/kb22" role="button" target="_blank" class="btn btn-outline-dark mr-2 mb-2">GitHub <i class="fab fa-github"></i></a><a href="https://www.linkedin.com/in/bhanotkaran22/" role="button" target="_blank" class="btn btn-outline-dark mr-2 mb-2">LinkedIn <i class="fab fa-linkedin"></i></a><a href="https://medium.com/@bhanotkaran22" role="button" target="_blank" class="btn btn-outline-dark mr-2 mb-2">Medium <i class="fab fa-medium"></i></a>
+			  </div>
+			</div>
+		  </section>
+		  <section id="projects" class="projects px-4 my-2 bg-light">
+			<div class="py-4">
+			  <h5 class="text-uppercase font-os font-size-16 text-muted">Recent work</h5>
+			  <h1 class="text-uppercase font-staat font-size-34">Projects</h1>
+			</div>
 			<div class="row">
-				<div class="col-md-4">
-					<div class="iron_man">
-						<div class="iron_img">
-							<img src="images/01_iron_man_2.jpg">
-						</div>
-						<div class="image_info">
-							<h3>iron man 2</h3>
-							<p>
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-							Lorem Ipsum is simply
-							</p>
-							<a href="#">read more</a>
-						</div>
+			  <div class="col-lg-6">
+				<div id="featuredCarousel" class="carousel slide featuredCarousel" data-ride="carousel">
+				  <div class="carousel-inner">
+					<div class="carousel-item active">
+					  <h4 class="font-staat font-size-34"><a href="https://covidminder.idea.rpi.edu/" target="_blank">COVID MINDER</a></h4>
+					  <p class="font-os font-size-16">Regional disparities in COVID-19 pandemic<br>across United States</p>
+					  <img class="d-block w-100" src="images/covidminder.png" alt="First slide">
 					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="the_last">
-						<div class="airbinder_img">
-							<img src="images/02_the_last_airbender.jpg">
-						</div>
-						<div class="image_info">
-							<h3>the last airnender</h3>
-							<p>
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-							Lorem Ipsum is simply
-							</p>
-							<a href="#">read more</a>
-						</div>
+					<div class="carousel-item">
+					  <h4 class="font-staat font-size-34"><a href="https://mortalityminder.idea.rpi.edu/" target="_blank">MORTALITY MINDER</a></h4>
+					  <p class="font-os font-size-16">Premature death trends in United States<br>by causes of death</p>
+					  <img class="d-block w-100" src="images/mortalityminder.png" alt="Second slide">
 					</div>
+				  </div>
+				  <a class="carousel-control-next" href=".featuredCarousel" role="button" data-slide="next">
+					<span class="next-indicator">Next <i class="fas fa-chevron-circle-right"></i></span>
+				  </a>
 				</div>
-				<div class="col-md-4">
-					<div class="tron_legacy">
-						<div class="tron_img">
-							<img src="images/03_tron_legacy.jpg">
-						</div>
-						<div class="image_info">
-							<h3>tron leagcy</h3>
-							<p>
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-							Lorem Ipsum is simply
-							</p>
-							<a href="#">read more</a>
-						</div>
-					</div>
-				</div>
+			  </div>
+			  <div class="col-lg-6" id="recent-projects">
+			  </div>
 			</div>
+		  </section>
+		  <section id="updates" class="updates px-4 my-2">
+			<div class="py-4">
+			  <h5 class="text-uppercase font-os font-size-16 text-muted">Recent</h5>
+			  <h1 class="text-uppercase font-staat font-size-34">News & Updates</h1>
+			</div>
+			<div class="row">
+			  <div class="col-md-6 updates-column">
+				<h5 class="font-staat font-size-20">Latest</h5>
+				<div id="latest-updates">
+				</div>
+			  </div>
+			  <div class="col-md-6 updates-column">
+				 <h5 class="font-staat font-size-20">Publications</h5>
+				<div id="publications">
+				</div>
+			  </div>
+			</div>
+		  </section>
+		  <section id="extra" class="px-4 my-2 bg-light">
+			<div class="py-4">
+			  <h5 class="text-uppercase font-os font-size-16 text-muted">Extra-curricular</h5>
+			  <h1 class="text-uppercase font-staat font-size-34">Extras</h1>
+			</div>
+			<div class="row">
+			  <div class="col-lg-6">
+				<p class="text-justify">
+				  I believe <strong>we grow when we step out of out comfort zones.</strong> Thus, in <strong>October 2019</strong>, I decided that I will try something new each month and see if I can grow a little more each month.
+				</p>
+				<p>This month I'm doing - 
+				</p>
+				<p class="font-staat font-size-40">
+				 &nbsp;&nbsp;&nbsp;&nbsp;15 Min Meditation
+				</p>
+				<p class="text-justify">Out of all the tasks I tried, I have decided to forever inclucate <strong>daily reading, workout, cold shower and less social media usage</strong> in my life till now. Let's see what's more!
+				</p>
+			  </div>
+			  <div class="col-lg-6">
+				<table class="table">
+				  <thead class="thead-dark">
+					<tr>
+					  <th scope="col">Month</th>
+					  <th scope="col">Task</th>
+					  <th scope="col">Completion rate</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr>
+					  <th>June, 2020</th>
+					  <td>Meditate for 15 minutes</td>
+					  <td>In progress</td>
+					</tr>
+					<tr>
+					  <th>May, 2020</th>
+					  <td>Read for 30 minutes</td>
+					  <td>100%</td>
+					</tr>
+					<tr>
+					  <th>April, 2020</th>
+					  <td>Drink 4 bottles of water</td>
+					  <td>100%</td>
+					</tr>
+					<tr>
+					  <th>March, 2020</th>
+					  <td>Take a cold shower</td>
+					  <td>71.4%</td>
+					</tr>
+					<tr>
+					  <th>February, 2020</th>
+					  <td>Journal every night</td>
+					  <td>82.76%</td>
+					</tr>
+					<tr>
+					  <th>January, 2020</th>
+					  <td>Don't use Instagram</td>
+					  <td>100%</td>
+					</tr>
+					<tr>
+					  <th>December, 2019</th>
+					  <td>No shave</td>
+					  <td>100%</td>
+					</tr>
+					<tr>
+					  <th>November, 2019</th>
+					  <td>No junk food</td>
+					  <td>93.33%</td>
+					</tr>
+					<tr>
+					  <th>October, 2019</th>
+					  <td>Exercise in gym</td>
+					  <td>90.3%</td>
+					</tr>
+				  </tbody>
+				</table>
+			  </div>
+			</div>
+		  </section>
 		</div>
-	</div>
-
-</body>
+	  </div>
+	</main>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+	<script src="scripts/index.js"></script>
 </html>

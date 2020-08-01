@@ -27,9 +27,10 @@ function toggleOnClick($win, $navbar, width) {
 
 var typed = new Typed('#typed', {
 	strings: [
-		"Data Science",
+	    "Computer Science",
+	    "Web API",
+	    "UI Development",
 		"Machine Learning",
-		"Computer Science"
 	],
 	typeSpeed: 50,
 	backSpeed: 50,

@@ -127,7 +127,7 @@ html {
   border-radius: 50%;
   border: 1px solid var(--color-white);
   margin: auto;
-  background: url(./images/profile_.jpg) no-repeat;
+  background: url(./images/Profile_.jpg) no-repeat;
   background-size: 100%;
   background-position: 40% 0;
 }
